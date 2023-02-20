@@ -28,3 +28,8 @@ Childlist：用于记录当前Node所有child Id以及对应child上传了多少
 5、GCPWC.sh 和 startbootnode.sh：两个类似于pssh的脚本，用于在VM上运行代码，生成Code。其参数按顺序分别为：这个VM第一个Node将会bind的端口；boot IP； boot port；这个VM上一共会生成多少Node；Wordcount的window size；数据读取速率；本次实验一共有多少Node同时运行。
 
 ## 有关测试中遇到的Warning 和 Error：
+测试中出现了两个Warning：
+1、LimitedSockets类提示某些node的socket中没有reader
+2、ScribeImpl类提示有些scribe client从未知的Topic收到了publish消息（但是只有一个Topic）
+以及一个error：
+1、Scribe client提示某些Node在收到其他node传来的消息时，并未在自己的childlist中找到这一node。导致出现null pointer错误（因为要给对应child的计数增加1，get方法返回了这一空指针错误）
