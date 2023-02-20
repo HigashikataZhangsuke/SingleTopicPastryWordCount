@@ -35,7 +35,7 @@ Childlist：用于记录当前Node所有child Id以及对应child上传了多少
 1、Scribe client提示某些Node在收到其他node传来的消息时，并未在自己的childlist中找到这一node。导致出现null pointer错误（因为要给对应child的计数增加1，get方法返回了这一空指针错误）
 
 对应的错误发生在wordcountapplication的319-323行，也就是application level deliver函数处。
-
+以上是实验中硬件和网络带宽资源的消耗情况。
 ![Screenshot from 2023-02-19 22-39-52](https://user-images.githubusercontent.com/32588848/220004430-a26735a2-b95c-48d8-a951-3afc49054a3f.png)
 ![Screenshot from 2023-02-19 22-40-35](https://user-images.githubusercontent.com/32588848/220004432-1456a84e-7640-49c1-99ca-eaed027a835e.png)
 ![Screenshot from 2023-02-19 22-41-16](https://user-images.githubusercontent.com/32588848/220004433-4696b1e1-9184-4e14-ba59-eaf7659d92bf.png)
