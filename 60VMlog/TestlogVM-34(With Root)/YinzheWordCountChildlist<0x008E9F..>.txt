@@ -1,0 +1,12 @@
+[Yinzhe:] Start get childlist for Parent node <0x008E9F..> for window 0 and the childlist size is 1
+[Yinzhe:] Putting Nodehandle<0xFFB943..> for Parent node 
+[Yinzhe:] Finished get Childlist for this node, it has childlist {<0xFFB943..>=0}
+[Yinzhe:] Start get childlist for Parent node <0x008E9F..> for window 2 and the childlist size is 1
+[Yinzhe:] Putting Nodehandle<0xFFB943..> for Parent node 
+[Yinzhe:] Finished get Childlist for this node, it has childlist {<0xFFB943..>=0}
+[Yinzhe:] Start get childlist for Parent node <0x008E9F..> for window 3 and the childlist size is 1
+[Yinzhe:] Putting Nodehandle<0xFFB943..> for Parent node 
+[Yinzhe:] Finished get Childlist for this node, it has childlist {<0xFFB943..>=0}
+[Yinzhe:] Start get childlist for Parent node <0x008E9F..> for window 4 and the childlist size is 1
+[Yinzhe:] Putting Nodehandle<0xFFB943..> for Parent node 
+[Yinzhe:] Finished get Childlist for this node, it has childlist {<0xFFB943..>=0}
