@@ -33,3 +33,5 @@ Childlist：用于记录当前Node所有child Id以及对应child上传了多少
 2、ScribeImpl类提示有些scribe client从未知的Topic收到了publish消息（但是只有一个Topic）
 以及一个error：
 1、Scribe client提示某些Node在收到其他node传来的消息时，并未在自己的childlist中找到这一node。导致出现null pointer错误（因为要给对应child的计数增加1，get方法返回了这一空指针错误）
+
+对应的错误发生在wordcountapplication的319-323行，也就是application level deliver函数处。
